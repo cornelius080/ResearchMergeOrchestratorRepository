@@ -1,0 +1,25 @@
+# Git
+.git/
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Notebooks & Data
+.ipynb_checkpoints/
+test/
+notebook/
+
+# OS
+.DS_Store
+Thumbs.db

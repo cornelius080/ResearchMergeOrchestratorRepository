@@ -1,0 +1,17 @@
+services:
+  research-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: research-merge-orchestrator:latest
+    container_name: research-merge-orchestrator
+    ports:
+      # Map host port to container port 8000
+      - "${HOST_PORT:-8000}:8000"
+    env_file:
+      - ./config/.env
+    environment:
+      - ENV_FILE_PATH=/app/config/.env
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped

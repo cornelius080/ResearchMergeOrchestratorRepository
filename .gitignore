@@ -1,0 +1,4 @@
+.env
+.adk
+.vscode/
+__pycache__/
